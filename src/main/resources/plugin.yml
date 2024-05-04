@@ -2,3 +2,14 @@ name: SkyblockCore
 version: '${project.version}'
 main: me.skyblockcore.SkyblockCore
 api-version: '1.16'
+depend:
+  - WorldEdit
+  - SkyblockAPI
+commands:
+  sbmatic:
+    description: General command for schematics
+    permission: skyblock.schematic
+  island:
+    description: Island comand
+    aliases:
+      - is

@@ -6,7 +6,7 @@
 
   <groupId>me</groupId>
   <artifactId>SkyblockCore</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
 
   <name>SkyblockCore</name>
@@ -27,6 +27,13 @@
           <target>${java.version}</target>
         </configuration>
       </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <outputDirectory>C:\Users\adriw\Desktop\1.16.5\plugins</outputDirectory>
+            </configuration>
+        </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
@@ -58,6 +65,14 @@
           <id>sonatype</id>
           <url>https://oss.sonatype.org/content/groups/public/</url>
       </repository>
+      <repository>
+          <id>enginehub-maven</id>
+          <url>https://maven.enginehub.org/repo/</url>
+      </repository>
+      <repository>
+          <id>jitpack.io</id>
+          <url>https://jitpack.io</url>
+      </repository>
   </repositories>
 
   <dependencies>
@@ -65,6 +80,18 @@
           <groupId>org.spigotmc</groupId>
           <artifactId>spigot-api</artifactId>
           <version>1.16.5-R0.1-SNAPSHOT</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.sk89q.worldedit</groupId>
+          <artifactId>worldedit-bukkit</artifactId>
+          <version>7.2.17-SNAPSHOT</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.github.FragsVoid</groupId>
+          <artifactId>skyblockapi</artifactId>
+          <version>1.1</version>
           <scope>provided</scope>
       </dependency>
   </dependencies>
