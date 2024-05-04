@@ -1,0 +1,4 @@
+name: SkyblockCore
+version: '${project.version}'
+main: me.skyblockcore.SkyblockCore
+api-version: '1.16'
